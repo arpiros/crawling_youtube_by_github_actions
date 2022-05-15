@@ -19,4 +19,5 @@ jobs:
      - name: Run Python
        env: 
         DISCORD_KIRINUKI_WEBHOOK_URL: ${{ secrets.DISCORD_KIRINUKI_WEBHOOK_URL }}
+        YOUTUBE_URL: ${{ secrets.YOUTUBE_URL }}
        run: python webhook.py
