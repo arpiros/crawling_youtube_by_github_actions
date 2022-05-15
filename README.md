@@ -4,6 +4,7 @@
 |name| desc|
 |-|-|
 |WEBHOOK_URL|discord webhook url|
+|YOUTUBE_URL|search youtube url|
 
 ### pip install
 ```shell
