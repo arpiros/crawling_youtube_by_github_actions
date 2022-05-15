@@ -13,8 +13,9 @@ jobs:
         cache: 'pip'
      - name: Install Dependencies
        run: |
-        pip install discord-webhook, selenium
-        pip install selenium
+        pip install discord-webhook
+        pip install get-chrome-driver --upgrade
+        pip install -r selenium/requirements.txt
      - name: Run Python
        env: 
         DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
