@@ -12,7 +12,9 @@ jobs:
         architecture: 'x64'
         cache: 'pip'
      - name: Install Dependencies
-       run: pip install discord-webhook
+       run: |
+        pip install discord-webhook, selenium
+        pip install selenium
      - name: Run Python
        env: 
         DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
