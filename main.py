@@ -1,3 +1,4 @@
+import os
 import discord
 from discord.ext import commands
 
@@ -11,4 +12,6 @@ async def on_ready():
 async def 안녕(ctx):
     await ctx.send('반갑습니다')
 
-bot.run('token')
+TOKEN = os.getenv('DISCORD_BOT_TOKEN')
+
+bot.run(TOKEN)
