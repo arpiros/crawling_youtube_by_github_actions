@@ -7,8 +7,7 @@ from time import sleep
 from discord_webhook import DiscordWebhook
 
 WEBHOOK_URL = os.getenv('DISCORD_KIRINUKI_WEBHOOK_URL')
-
-YOUTUBE_URL = 'https://www.youtube.com/results?search_query=%ED%82%A4%EB%A6%AC%EB%88%84%ED%82%A4&sp=EgIIAQ%253D%253D'
+YOUTUBE_URL = os.getenv('YOUTUBE_URL')
 
 get_driver = GetChromeDriver()
 get_driver.install()
